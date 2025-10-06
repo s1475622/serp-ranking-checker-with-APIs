@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(move test_apify_crawler.py tests )",
+      "Bash(move test_keywords_reader.py tests )",
+      "Bash(move test_keywords.csv tests )",
+      "Bash(move serp_api_test.py tests)",
+      "Bash(powershell:*)",
+      "Bash(mv:*)",
+      "Bash(python:*)",
+      "Bash(copy keywords.csv keywords_big5_backup.csv)",
+      "Bash(copy keywords_utf8.csv keywords.csv)",
+      "Bash(cp:*)",
+      "Bash(set)",
+      "Bash(dir:*)",
+      "Bash(tree:*)",
+      "Bash(rm:*)",
+      "Bash(pip install:*)",
+      "Bash(more:*)",
+      "Bash(copy gui_app.py gui_app_old.py)",
+      "Bash(copy gui_app_v2.py gui_app.py)",
+      "Bash(copy run_gui.bat run_gui_old.bat)",
+      "Bash(copy run_gui_v2.bat run_gui.bat)"
+    ],
+    "deny": []
+  }
+}

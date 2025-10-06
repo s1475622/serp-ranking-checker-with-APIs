@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment Variables
+.env
+
+# Application Settings
+gui_settings.json
+
+# Results (keep directory structure)
+results/*.csv
+results/archive/*
+!results/.gitkeep
+
+# Archive
+archive/*.csv
+archive/*.json
+!archive/.gitkeep
+
+# Screenshots and temporary files
+screencap for ai/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
