@@ -3,9 +3,15 @@ import pandas as pd
 from datetime import datetime
 import os
 import time
+from dotenv import load_dotenv
+
+# 載入環境變數
+load_dotenv()
 
 # Apify設定
-APIFY_API_TOKEN = "REMOVED_APIFY_TOKEN"
+APIFY_API_TOKEN = os.getenv('APIFY_API_TOKEN', '')
+if not APIFY_API_TOKEN:
+    raise ValueError("請在 .env 檔案中設定 APIFY_API_TOKEN")
 ACTOR_ID = "apify/google-search-scraper"  # 使用官方的Google搜尋爬蟲
 
 # 目標網域
