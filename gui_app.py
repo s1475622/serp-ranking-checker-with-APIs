@@ -669,8 +669,9 @@ class SERPTrackerGUI:
             self.log_output("開始測試即時輸出...")
             self.log_output(f"工作目錄: {os.getcwd()}")
 
-            if not os.path.exists('test_output.py'):
-                self.log_output("❌ 錯誤: test_output.py 檔案不存在！")
+            test_file = os.path.join('tests', 'test_output.py')
+            if not os.path.exists(test_file):
+                self.log_output("❌ 錯誤: tests\\test_output.py 檔案不存在！")
                 return
 
             def run_test():
@@ -682,7 +683,7 @@ class SERPTrackerGUI:
                     env['PYTHONIOENCODING'] = 'utf-8'
 
                     process = subprocess.Popen(
-                        ['python', '-u', 'test_output.py'],
+                        ['python', '-u', test_file],
                         stdout=subprocess.PIPE,
                         stderr=subprocess.PIPE,
                         text=True,
